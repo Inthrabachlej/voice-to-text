@@ -28,8 +28,13 @@ audio = np.concatenate(recording, axis=0)
 write("/tmp/voice.wav", fs, audio)
 
 print("⏳ Przetwarzam...")
-model = whisper.load_model("base")
-result = model.transcribe("/tmp/voice.wav", language="pl", fp16=False)
+model = whisper.load_model("medium")
+result = model.transcribe(
+    "/tmp/voice.wav",
+    language="pl",
+    fp16=False,
+    initial_prompt="Transkrypcja rozmowy po polsku. Poprawna polska ortografia i interpunkcja."
+)
 
 text = result["text"].strip()
 subprocess.run(['xclip', '-selection', 'clipboard'], input=text.encode('utf-8'))
