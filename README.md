@@ -16,15 +16,15 @@ pip install openai-whisper sounddevice scipy --break-system-packages
 sudo apt install xclip portaudio19-dev python3-pyaudio -y
 
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/voice-to-text.git
+git clone https://github.com/Inthrabachlej/voice-to-text.git
 cd voice-to-text
 
 # Make executable
 chmod +x mow.py speak.py
 
 # Optional: Add aliases to ~/.bashrc
-echo "alias mow='python3 /home/akex/Projects/voice-to-text/mow.py'" >> ~/.bashrc
-echo "alias speak='python3 /home/akex/Projects/voice-to-text/speak.py'" >> ~/.bashrc
+echo "alias mow='python3 \"$HOME/Projects/voice-to-text/mow.py\"'" >> ~/.bashrc
+echo "alias speak='python3 \"$HOME/Projects/voice-to-text/speak.py\"'" >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -32,13 +32,13 @@ source ~/.bashrc
 
 **Polish:**
 ```bash
-python3 /home/akex/Projects/voice-to-text/mow.py
+python3 mow.py
 # or with alias: mow
 ```
 
 **English:**
 ```bash
-python3 /home/akex/Projects/voice-to-text/speak.py
+python3 speak.py
 # or with alias: speak
 ```
 
