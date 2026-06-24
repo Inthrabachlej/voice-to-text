@@ -1,6 +1,6 @@
-# Voice-to-Text CLI Tools
+# voice-to-text
 
-Offline voice transcription using OpenAI Whisper. Press Enter to start/stop recording, text automatically copied to clipboard.
+Local voice-to-text workflow tools for transcription and clipboard output. Offline, privacy-first, supports Polish and English.
 
 ## Features
 - 🎤 Press-to-talk interface (Enter to start/stop)
