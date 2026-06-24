@@ -16,7 +16,7 @@ pip install openai-whisper sounddevice scipy --break-system-packages
 sudo apt install xclip portaudio19-dev python3-pyaudio -y
 
 # Clone repository
-git clone https://github.com/Inthrabachlej/voice-to-text.git
+git clone https://github.com/alexbachlej/voice-to-text.git
 cd voice-to-text
 
 # Make executable
